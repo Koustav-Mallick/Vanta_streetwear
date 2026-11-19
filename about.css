@@ -1,0 +1,703 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.header-section{
+    width: 100%;
+    background-color: #111111;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.header-head{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.brand-logo{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.brand-tagline{
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.header-body,
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.nav-links button{
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-links button:hover{
+    color: #b6a078;
+}
+
+.about-hero{
+    min-height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("img-abt.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-hero-container{
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+    padding: 60px 8%;
+}
+
+.about-hero-content{
+    width: 60%;
+}
+
+.about-hero-content p{
+    margin-top: 20px;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-hero-content h6{
+    color: #b6a078;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.about-hero-content h1{
+    margin-top: 20px;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.about-hero-content button,
+.story-content button,
+.campaign-content button,
+.identity-content button{
+    padding: 14px 22px;
+    margin-top: 25px;
+    background-color: #b6a078;
+    color: #111111;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-hero-content button:hover,
+.story-content button:hover,
+.campaign-content button:hover,
+.identity-content button:hover{
+    background-color: #ffffff;
+}
+
+.story-section{
+    padding: 90px 8%;
+    background-color: #111111;
+}
+
+.story-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.story-image{
+    width: 50%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.story-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-content{
+    width: 50%;
+}
+
+.section-label{
+    color: #b6a078;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.story-content h2{
+    margin-top: 20px;
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.story-content p{
+    margin-top: 20px;
+    color: #bbbbbb;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.philosophy-section{
+    padding: 100px 8%;
+    background-image: url("img-abt2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.philosophy-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.philosophy-heading{
+    width: 45%;
+}
+
+.philosophy-heading p,
+.campaign-content p,
+.identity-content p{
+    color: #b6a078;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.philosophy-heading h2{
+    margin-top: 20px;
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.philosophy-content{
+    width: 55%;
+    color: #dddddd;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.philosophy-content p{
+    margin-top: 20px;
+}
+
+.values-section{
+    padding: 80px 8%;
+    background-color: #0b0b0b;
+}
+
+.values-heading{
+    text-align: center;
+}
+
+.values-heading p{
+    color: #b6a078;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.values-heading h2{
+    margin-top: 15px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.values-grid{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.values-card{
+    width: 34%;
+    padding: 30px;
+    border: 1px solid #333333;
+    background-color: #111111;
+    border-radius: 4px
+}
+
+.values-number{
+    color: #b6a078;
+    font-size: 24px;
+}
+
+.values-card h3{
+    margin-top: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.values-card p{
+    margin-top: 15px;
+    color: #aaaaaa;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.campaign-section{
+    padding: 80px 8%;
+    background-image: url("img-abt4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.campaign-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 5%;
+    background-color: rgba(0,0,0,0.65);
+    text-align: center;
+}
+
+.campaign-content h2{
+    margin-top: 20px;
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.identity-section{
+    padding: 80px 8%;
+    background-color: #111111;
+}
+
+.identity-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.identity-image{
+    width: 45%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.identity-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.identity-content{
+    width: 55%;
+}
+
+.identity-content h2{
+    margin-top: 20px;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.footer-section{
+    padding: 50px 8%;
+    background-color: #080808;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.footer-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-logo{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.footer-logo button{
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-navigation ul{
+    list-style: none;
+}
+
+.footer-navigation li{
+    margin-top: 8px;
+}
+
+.footer-navigation button,
+.footer-contact button{
+    background: none;
+    border: none;
+    color: #bbbbbb;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-navigation button:hover,
+.footer-contact button:hover{
+    color: #b6a078;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+.footer-body{
+    padding-top: 25px;
+    border-top: 1px solid #333333;
+}
+
+.footer-content{
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+.nav-links button{
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links button:hover{
+    transform: translateY(-2px);
+}
+
+.about-hero-content{
+    animation: fadeIn 1s ease-out;
+}
+
+.about-hero-content button,
+.story-content button,
+.campaign-content button,
+.identity-content button{
+    padding: 12px 20px;
+    margin: 10px 8px 0 0;
+    background-color: #b6a078;
+    color: #111111;
+    border-radius: 8px;
+    cursor: pointer;
+    width: max-content;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-hero-content button:hover,
+.story-content button:hover,
+.campaign-content button:hover,
+.identity-content button:hover{
+    background-color: #ffffff;
+    transform: scale(1.03);
+}
+
+.story-image img,
+.identity-image img{
+    transition: transform 0.4s ease;
+    border-radius: 12px;
+}
+
+.story-image:hover img,
+.identity-image:hover img{
+    transform: scale(1.04);
+}
+
+.values-card{
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.values-card:hover{
+    transform: translateY(-8px);
+    border-color: #b6a078;
+    background-color: #161616;
+}
+
+.campaign-container{
+    transition: background-color 0.3s ease;
+}
+
+.campaign-container:hover{
+    background-color: rgba(0,0,0,0.75);
+}
+
+.footer-logo button,
+.footer-navigation button,
+.footer-contact button{
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-navigation button:hover,
+.footer-contact button:hover{
+    transform: translateX(4px);
+}
+
+.footer-logo button:hover{
+    color: #b6a078;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 900px){
+    .header-container{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 0;
+    }
+    .about-hero,
+    .about-hero-container{
+        min-height: 60vh;
+    }
+    .about-hero-container{
+        padding: 55px 6%;
+    }
+    .about-hero-content{
+        width: 80%;
+    }
+    .about-hero-content h1{
+        font-size: 48px;
+    }
+    .story-container,
+    .philosophy-container,
+    .identity-container{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .story-image,
+    .story-content,
+    .philosophy-heading,
+    .philosophy-content,
+    .identity-image,
+    .identity-content{
+        width: 100%;
+    }
+    .story-image{
+        height: 420px;
+    }
+    .philosophy-heading h2{
+        font-size: 45px;
+    }
+    .values-grid{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .values-card{
+        width: calc(50% - 13px);
+    }
+    .campaign-container{
+        padding: 55px 5%;
+    }
+    .campaign-content h2{
+        font-size: 38px;
+    }
+    .story-section,
+    .philosophy-section,
+    .values-section,
+    .campaign-section,
+    .identity-section{
+        padding: 65px 6%;
+    }
+    .footer-head{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .header-container{
+        padding: 18px 5%;
+    }
+    .brand-logo{
+        font-size: 27px;
+    }
+    .brand-tagline{
+        font-size: 10px;
+    }
+    .nav-links{
+        gap: 12px 18px;
+    }
+    .nav-links button{
+        font-size: 11px;
+    }
+    .about-hero,
+    .about-hero-container{
+        min-height: 55vh;
+    }
+    .about-hero-container{
+        padding: 45px 6%;
+    }
+    .about-hero-content{
+        width: 100%;
+    }
+    .about-hero-content h6{
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .about-hero-content h1{
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .about-hero-content p{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .about-hero-content button,
+    .story-content button,
+    .campaign-content button,
+    .identity-content button{
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+    .story-section,
+    .philosophy-section,
+    .values-section,
+    .campaign-section,
+    .identity-section{
+        padding: 50px 6%;
+    }
+    .story-image{
+        height: 300px;
+    }
+    .section-label,
+    .philosophy-heading p,
+    .campaign-content p,
+    .identity-content p,
+    .values-heading p{
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .story-content h2{
+        font-size: 32px;
+    }
+    .story-content p,
+    .philosophy-content{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .philosophy-heading h2{
+        font-size: 35px;
+    }
+    .values-heading h2{
+        font-size: 29px;
+        letter-spacing: 1px;
+    }
+    .values-grid{
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 30px;
+    }
+    .values-card{
+        width: 100%;
+        padding: 24px;
+        border-radius: 8px;
+    }
+    .values-card h3{
+        font-size: 17px;
+    }
+    .values-card p{
+        font-size: 14px;
+    }
+    .campaign-container{
+        padding: 40px 5%;
+        border-radius: 12px;
+    }
+    .campaign-content h2{
+        font-size: 29px;
+        line-height: 1.3;
+    }
+    .identity-image{
+        height: 280px;
+    }
+    .identity-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .identity-content h2{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .footer-section{
+        padding: 40px 6%;
+    }
+    .footer-head{
+        flex-direction: column;
+        gap: 28px;
+    }
+    .footer-content{
+        font-size: 11px;
+    }
+}
